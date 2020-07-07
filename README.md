@@ -1,11 +1,10 @@
 tz-lookup
 =========
-This is a little Javascript library that allows you to look up the time zone of
-a location given its latitude and longitude. It works in both the browser and
-in Node.JS, and is very fast and lightweight (~71KB) given what it does. We
-use it in production for [The Dark Sky API][1].
+This library allows you to look up the time zone of a location given its latitude and longitude.
+It works in both the browser and in Node.JS, and is very fast and lightweight (~71KB).
 
-**This library is no longer actively maintained under an Open Source license. Please fork it if you would like to continue development.**
+It is a fork of a library used in production for [The Dark Sky API][1]. As the library is no longer maintained under an
+Open Source License, it has been forked to allow us to continue using it.
 
 [1]: https://darksky.net/dev/
 
@@ -13,12 +12,12 @@ Usage
 -----
 To install:
 
-    npm install tz-lookup
+    npm install @beyonk/tz-lookup
 
 Node.JS usage:
 
 ```javascript
-var tzlookup = require("tz-lookup");
+var tzlookup = require("@beyonk/tz-lookup");
 console.log(tzlookup(42.7235, -73.6931)); // prints "America/New_York"
 ```
 
@@ -63,10 +62,3 @@ Then, simply execute `rebuild.sh`. Expect it to take 10-30 minutes, depending
 on your network connection and CPU.
 
 [tbb]: https://github.com/evansiroky/timezone-boundary-builder/
-
-License
--------
-To the extent possible by law, The Dark Sky Company, LLC has [waived all
-copyright and related or neighboring rights][cc0] to this library.
-
-[cc0]: http://creativecommons.org/publicdomain/zero/1.0/

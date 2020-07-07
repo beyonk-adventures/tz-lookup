@@ -1,4 +1,6 @@
 {
+  "name": "@beyonk/tz-lookup",
+  "version": "6.1.26",
   "author": {
     "email": "developer@darksky.net",
     "name": "The Dark Sky Company"
@@ -13,15 +15,12 @@
     "timezone",
     "time zone"
   ],
-  "license": "CC0-1.0",
   "main": "tz.js",
-  "name": "tz-lookup",
   "repository": {
     "type": "git",
-    "url": "git://github.com/darkskyapp/tz-lookup.git"
+    "url": "git://github.com/beyonk-adventures/tz-lookup.git"
   },
   "scripts": {
     "test": "mocha"
-  },
-  "version": "6.1.26"
+  }
 }
